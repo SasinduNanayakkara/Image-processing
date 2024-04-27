@@ -16,6 +16,7 @@ cv2.imshow("eroded image3", eroded_image3)
 
 cv2.waitKey(0)
 
+# ===================================================================================
 
 image2 = cv2.imread('binary.png', 0) # read image
 
@@ -28,6 +29,7 @@ cv2.imshow('Original Image', image2)
 cv2.imshow('Dilated Image', dilated_image)
 cv2.waitKey(0)
 
+# =======================================================================================
 
 image3 = cv2.imread('binary4.png', 0) # read image
 
@@ -41,6 +43,8 @@ cv2.imshow('Original Image', image3)
 cv2.imshow('Dilated Image', dilated_image)
 cv2.waitKey(0)
 
+# ====================================================================================
+
 image4 = cv2.imread('binary5.png', 0)
 
 kernel = np.ones((5,5), np.uint8)
@@ -50,6 +54,8 @@ closing = cv2.morphologyEx(image4, cv2.MORPH_CLOSE, kernel) # Perform dilation f
 cv2.imshow('Original Image', image4)
 cv2.imshow('Dilated Image', closing)
 cv2.waitKey(0)
+
+# ==========================================================================================
 
 image5 = cv2.imread('binary6.PNG', 0)
 
